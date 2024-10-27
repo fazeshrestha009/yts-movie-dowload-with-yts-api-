@@ -28,10 +28,12 @@
         </div>
     </nav>
 
-    <section class="landing">
-        <div class="content">
+    <section class="movie-details-container">
+        <div class="movie-poster">
+            <img id="moviePoster" src="" alt="Movie Poster">
+        </div>
+        <div class="movie-info">
             <h1 id="movieTitle">Movie Title</h1>
-            <img id="moviePoster" src="" alt="Movie Poster" style="max-width: 300px; margin: 20px 0;">
             <p id="movieDescription"></p>
             <div class="movie-rating">
                 <strong>Rating:</strong> <span id="movieRating"></span>
@@ -39,10 +41,14 @@
             <div class="movie-genres">
                 <strong>Genres:</strong> <span id="movieGenres"></span>
             </div>
+            <div class="movie-pricing">
+                <p><strong>Price:</strong> <span id="moviePrice"></span></p>
+                <p><strong>Discounted Price:</strong> <span id="discountedPrice"></span></p>
+            </div>
+            <button id="addToCartBtn" class="add-to-cart-btn">Add to Cart</button>
             <a href="/yts.html" class="back-btn">Back to Movies</a>
         </div>
     </section>
-
     <footer class="footer">
         <div class="footer-links">
             <p>YTS © 2011 - 2024 | 

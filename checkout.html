@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - YTS MX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="checkout.js" defer></script>
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="cart-items">
+            <h2>Your Cart</h2>
+            <div class="cart-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Movie</th>
+                            <th>Movie Name</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartItems"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <h2>My Cart</h2>
+            <div class="price-breakdown">
+                <div class="price-item">
+                    <span>SUB TOTAL</span>
+                    <span id="subTotal">NPR 0.00</span>
+                </div>
+                <div class="price-item">
+                    <span>Delivery Fee</span>
+                    <span>NPR <span id="deliveryFee">00.00</span></span>
+                </div>
+                <div class="price-item">
+                    <span>Service Charge</span>
+                    <span>NPR <span id="serviceCharge">00.00</span></span>
+                </div>
+                <div class="price-item special-discount">
+                    <span>Special Offer Discount</span>
+                    <span id="discount">NPR 0.00</span>
+                </div>
+            </div>
+            <hr />
+            <div class="total">
+                <span>Grand Total</span>
+                <span id="grandTotal">NPR 0.00</span>
+            </div>
+            <p>Total Price: <span id="totalPrice">₨0.00</span></p>
+            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>

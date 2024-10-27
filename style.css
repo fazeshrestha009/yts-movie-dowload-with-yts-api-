@@ -208,11 +208,10 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     width: 600px;
-    max-height: 300px; 
-    overflow-y: auto; 
-    display: none; 
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
 }
-
 .dropdown-item {
     display: flex;
     align-items: center;
@@ -220,11 +219,9 @@ a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .dropdown-item:hover {
     background-color: #333;
 }
-
 .dropdown-item img {
     width: 50px;
     height: auto;
@@ -239,7 +236,6 @@ a:hover {
     border-radius: 8px;
     color: #f3f3f3;
 }
-
 .movie-details-container img {
     width: 100%;
     border-radius: 8px;
@@ -251,23 +247,189 @@ a:hover {
     border-radius: 3px;
     margin-right: 5px;
 }
-.back-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Green background color */
-    color: white; /* White text */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-}
-.back-btn:hover {
-    background-color: #e4f0e4; /* Darker green on hover */
-}
 .content .back-btn {
     margin-top: 20px;
     text-align: center;
 }
-
+.add-to-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+.add-to-cart-btn:hover {
+    background-color: #e55340;
+}
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #f3f3f3;
+}
+.cart-items {
+    width: 65%;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+.cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-items th, .cart-items td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+.cart-items th {
+    background-color: #333;
+    color: #f3f3f3;
+}
+.cart-items td {
+    background-color: #222;
+    color: #f3f3f3;
+}
+.cart-summary {
+    width: 30%;
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 8px;
+    color: #e2ebec;
+    text-align: center;
+}
+.checkout-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.delete-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.delete-btn:hover {
+    background-color: #e55340;
+}
+.movie-pricing {
+    margin-top: 10px;
+}
+.movie-pricing p {
+    font-size: 1.2em;
+    color: #fff;
+}
+.movie-pricing #moviePrice {
+    text-decoration: line-through;
+    color: #ccc;
+}
+.movie-pricing #discountedPrice {
+    color: #ff6347;
+    font-weight: bold;
+}
+#movieDescription {
+    color: #ccc;
+    margin-top: 15px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+.movie-details-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #f3f3f3;
+}
+.movie-poster {
+    flex: 1;
+    margin-right: 20px;
+}
+.movie-poster img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+.movie-info {
+    flex: 2;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+.movie-info h1 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.movie-info p {
+    color: #ccc;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.add-to-cart-btn, .back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: rgb(248, 242, 242);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+.add-to-cart-btn:hover {
+    background-color: #3e8e41;
+}
+.back-btn {
+    background-color: #f14806;
+    margin-left: 10px;
+}
+.back-btn:hover {
+    background-color: #f7f5f4;
+}
+.price-breakdown {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #f3f3f3;
+}
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.price-item span {
+    font-size: 1.1em;
+}
+.special-discount {
+    color: #d9534f;
+    font-weight: bold;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+#grandTotal {
+    color: #4CAF50;
+}
